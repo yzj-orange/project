@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/vue.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .fade-enter-active,
+        .fade-leave-active {
+            transition: all .8s ease;
+        }
+
+        .fade-enter,
+        .fade-leave-to {
+            transform: translateX(-30px);
+            opacity: 0;
+        }
+
+        .fade1-enter-active,
+        .fade1-leave-active {
+            transition: all .8s ease;
+        }
+
+        .fade1-enter,
+        .fade1-leave-to {
+            transform: translateY(-30px);
+            opacity: 0;
+        }
+
+        .fade3-enter-active,
+        .fade3-leave-active {
+            transition: all .8s ease;
+        }
+
+        .fade3-enter {
+            opacity: 0;
+        }
+
+        .fade3-leave-to {
+            /* transform: translateY(-30px); */
+            opacity: 0;
+        }
+
+        .h1title {
+            position: absolute;
+            margin-left: 30vw;
+            top: 30vh;
+            font-size: 10em;
+
+        }
+
+        .h2title {
+            position: absolute;
+            margin-left: 30vw;
+            top: 20vh;
+            font-size: 2em;
+
+        }
+
+        .h3title {
+            overflow: hidden;
+            animation: h3title 6s;
+            animation-delay: 6s;
+            position: absolute;
+            margin-left: 30vw;
+            top: 20vh;
+            font-size: 20px;
+        }
+
+
+        .h3title1 {
+            overflow: hidden;
+            animation: h3title1 1.5s;
+            animation-delay: 12s;
+            position: absolute;
+            margin-left: 30vw;
+            top: 22vh;
+            font-size: 20px;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 4;
+        }
+
+        .h3title2 {
+            position: relative;
+            overflow: hidden;
+            margin-left: 30vw;
+            top: 29vh;
+            font-size: 20px;
+            color: lawngreen;
+        }
+
+        .h3title3 {
+            position: relative;
+            overflow: hidden;
+            margin-left: 30vw;
+            top: 36vh;
+            font-size: 20px;
+            color: lawngreen;
+        }
+
+        .h3title4 {
+            position: relative;
+            margin-left: 30vw;
+            top: 37vh;
+            font-size: 20px;
+            color: lawngreen;
+        }
+
+        .h3title5 {
+            position: relative;
+            margin-left: 30vw;
+            top: 38vh;
+            font-size: 20px;
+            color: lawngreen;
+        }
+
+        .h3title6 {
+            position: relative;
+            margin-left: 30vw;
+            top: 39vh;
+            font-size: 20px;
+            color: lawngreen;
+            animation: h3title1 2s;
+            animation-delay: 25s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-in-out;
+        }
+
+        .h3title7 {
+            position: relative;
+            margin-left: 30vw;
+            top: 41vh;
+            font-size: 20px;
+            color: crimson;
+
+        }
+
+        .h3title8 {
+            position: relative;
+            margin-left: 30vw;
+            top: 42vh;
+            font-size: 20px;
+            white-space: nowrap;
+            background-color: lightblue;
+            color: lightcoral;
+            width: 0;
+            animation: h3title8 5s;
+            animation-delay: 35s;
+
+        }
+
+        @keyframes h3title8 {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 100px;
+            }
+
+            100% {
+                width: 300px;
+            }
+        }
+
+        p {
+            white-space: nowrap;
+        }
+
+        nobr {
+            color: lawngreen;
+        }
+
+
+        @keyframes loadbar2 {
+            0% {
+                width: 0;
+            }
+
+            25% {
+                width: 80px;
+            }
+
+            50% {
+                width: 150px;
+            }
+
+            100% {
+                width: 700px;
+            }
+        }
+
+        @keyframes h3title {
+            0% {
+                width: 0;
+            }
+
+            25% {
+                width: 80px;
+            }
+
+            50% {
+                width: 150px;
+            }
+
+            100% {
+                width: 301px;
+            }
+        }
+
+        @keyframes h3title1 {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .loadbar {
+            position: relative;
+            margin-left: 30vw;
+            top: 28vh;
+            background-color: yellowgreen;
+            /* width: 500px; */
+            height: 10px;
+            width: 0;
+            animation: loadbar 6s;
+            animation-delay: 12s;
+        }
+
+        .loadbar2 {
+            position: relative;
+            margin-left: 30vw;
+            top: 40vh;
+            background-color: white;
+            /* width: 500px; */
+            height: 50px;
+            width: 0;
+            animation: loadbar2 10s;
+            animation-delay: 24s;
+        }
+
+        @keyframes loadbar {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 200px;
+            }
+
+            100% {
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id=newModule>
+        <transition name="fade">
+            <h1 class="h1title" v-show="h1">HELLO!</h1>
+        </transition>
+        <transition name="fade1">
+            <h1 id=inner class="h2title" v-show="h2"></h1>
+        </transition>
+        <transition name="fade3">
+            <p id="loading" class="h3title"></p>
+        </transition>
+
+        <p style="margin-top: 10px;" id="loading1" class="h3title1"></p>
+        <div id="loadbar1" class="loadbar"></div>
+        <p id="loading2" class="h3title2"></p>
+        <p id="loading3" class="h3title3"></p>
+        <p id="loading4" class="h3title4"></p>
+        <p id="loading5" class="h3title5"></p>
+        <p id="loading6" class="h3title6"></p>
+        <div id=loadbar2 class="loadbar2"></div>
+        <p id="loading7" class="h3title7"></p>
+        <p id="loading8" class="h3title8"></p>
+
+    </div>
+</body>
+
+<script>
+    new Vue({
+        el: "#newModule",
+        computed: {
+
+        },
+        data() {
+            return {
+                h1: false,
+                h2: false
+            }
+        },
+        mounted() {
+            let text = "";
+            let _this = this
+            setTimeout(() =>
+                _this.h1 = true, 1000)
+            setTimeout(() =>
+                _this.h1 = false, 5000)
+            setTimeout(() =>
+                _this.h2 = true, 2500)
+            setTimeout(() =>
+                _this.h2 = false, 6000)
+            setTimeout(() => {
+                text = document.getElementById("loading").innerHTML = "<nobr>载入中---hold on</nobr>" +
+                    "<br>"
+            }, 6500)
+            setTimeout(() => {
+                document.getElementById("loading1").innerHTML =
+                    "<nobr>Reading configuration information</nobr>" +
+                    "<br>"
+            }, 12000)
+            setTimeout(() => {
+                document.getElementById("loadbar1").style.width = "500px";
+
+            }, 18 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading2").innerHTML = "COMPLETED"
+            }, 18.5 * 1000)
+
+            setTimeout(() => {
+                document.getElementById("loading3").innerHTML = "loading data source"
+            }, 19 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading3").innerHTML = "비밀번호 필요 함"
+            }, 21 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading4").innerHTML = "*"
+            }, 21.4 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading4").innerHTML = "*****"
+            }, 21.8 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading4").innerHTML = "********"
+            }, 22.4 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading4").innerHTML = "************"
+            }, 22.6 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading4").innerHTML = "***************"
+            }, 22.8 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading4").innerHTML = "***********************"
+            }, 23.1 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading5").innerHTML = "読み込み成功"
+            }, 24 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading6").innerHTML = "Загрузка данных"
+            }, 24 * 1000)
+            setTimeout(() => {
+                document.getElementById("loadbar2").style.width = "700px"
+            }, 34 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading7").innerHTML = "#sySTeM ALErT# code:871"
+            }, 35 * 1000)
+            setTimeout(() => {
+                document.getElementById("loading8").innerHTML = "StARt AlICIzaTioN......"
+            }, 35 * 1000)
+            setTimeout(() => {
+                window.location.href = "alicization.html"
+            }, 39 * 1000)
+
+            document.getElementById("inner").innerHTML = "訪問を歓迎します"
+
+        },
+        watch: {
+
+        },
+        methods: {
+
+        },
+    })
+</script>
+
+</html>

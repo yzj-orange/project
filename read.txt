@@ -1,1 +1,2 @@
 easy demo for spring-cloud
+1.0

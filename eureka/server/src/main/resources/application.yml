@@ -1,0 +1,13 @@
+server:
+  port: 1515
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false #这便是此eureka server的应用注册地址
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false #防止由于Eureka的机制导致Client被错误显示在线 仅在开发环境使用
+    wait-time-in-ms-when-sync-empty: 0 #不显示对server应用的注册

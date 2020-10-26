@@ -1,0 +1,10 @@
+server:
+  port: 8084
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: gateway
+          uri: http://192.168.0.105:8764
+          predicates:
+            - Path=/hello

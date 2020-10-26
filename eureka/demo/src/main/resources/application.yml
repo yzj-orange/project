@@ -1,19 +1,16 @@
-# 多环境通用部分[各个环境可以覆盖通用字段]
 spring:
   application:
-    # 通用名字,其他环境可以覆盖：为你的应用起个名字，该名字将注册到eureka注册中心
     name: ribbon-consumer
+
 server:
-  # 服务提供监听端口[eureka客户端],注意改端口不能与本机服务器端口冲突
   port: 8764
+
 eureka:
   client:
-    # 是否将eureka自身作为应用注册到eureka注册中心,默认为true
     registerWithEureka: true
     serviceUrl:
-      # 这里可以填写所有的eureka服务器地址并以','分离，当前面不能注册时候,自动选择后面的进行注册，排除单点故障问题
       defaultZone: http://localhost:1515/eureka/
-      # 这里可以填写所有的eureka服务器地址并以','分离，当前面不能注册时候,自动选择后面的进行注册，排除单点故障问题
+
 hystrix:
   dashboard:
     proxy-stream-allow-list: "*"

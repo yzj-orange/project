@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/parallax.js"></script>
+    <title>2</title>
+</head>
+
+<body>
+    <audio autoplay='autoplay' loop="-1" preload="auto">
+        <source src="bgm/hai.mp3">
+    </audio>
+    <div class="banner" id="scene" data-scalar-x="10" data-scalar-y="15" data-calibrate-x="false"
+        data-calibrate-y="false" data-friction-x=".2" data-friction-y=".1" data-origin-x="-1" data-origin-y="-1">
+
+        <img data-depth=".3" class="bg2"></img>
+        <img data-depth="1.2" class="sev2" src="img/logog.png">
+        <img data-depth=".5" class="thr2" src="img/ho.png">
+        <div data-depth="1.2" id="showtime" class="time2"></div>
+    </div>
+</body>
+<script>
+    var scene = document.getElementById("scene");
+    var para = new Parallax(scene);
+    var div = document.getElementById("showtime");
+    var i = 150;
+    setInterval(function () {
+        i = i - 1
+        div.innerHTML = i;
+        if (i == 0) {
+            window.location.href = "thr.html"
+        }
+    }, 1000);
+</script>
+
+</html>

@@ -1,0 +1,146 @@
+#scene {
+    position: fixed;
+    top: -1px;
+    left: -1px;
+}
+
+.tree {
+    width: 40vw;
+    height: 60vh;
+    margin-top: 30vh;
+    margin-left: 0vw;
+    /* filter: blur(0.6px); */
+}
+
+.stone {
+    width: 40vw;
+    height: 60vh;
+    margin-top: 80vh;
+    margin-left: 30vw;
+
+}
+
+.bg {
+    width: 110vw;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/bg_beach.png);
+}
+
+.bg2 {
+    width: 110vw;
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/bg_island.png);
+}
+
+.bg3 {
+    width: 110vw;
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/bg_lungmen_r.png);
+}
+
+.sec {
+    width: 40vw;
+    height: 70vh;
+    margin-top: 41vh;
+    margin-left: 65vw;
+}
+
+.thr {
+    width: 50vw;
+    height: 95vh;
+    margin-top: 40vh;
+    margin-left: 25vw;
+}
+
+.fou {
+    width: 70vw;
+    height: 135vh;
+    margin-top: 40vh;
+    margin-left: -20vw;
+}
+
+.fiv {
+    width: 13vw;
+    height: 22vh;
+    margin-top: 50vh;
+    margin-left: 13vw;
+    filter: blur(0.3px);
+}
+
+.six {
+    width: 18vw;
+    height: 28vh;
+    margin-top: 47vh;
+    margin-left: 14vw;
+    filter: blur(0.2px);
+}
+
+.sev {
+    width: 28vw;
+    height: 23vh;
+    margin-top: 35vh;
+    margin-left: 50vw;
+}
+
+.sev2 {
+    width: 28vw;
+    height: 25vh;
+    margin-top: 28vh;
+    margin-left: 30vw;
+}
+
+.sev3 {
+    width: 28vw;
+    height: 25vh;
+    margin-top: 80vh;
+    margin-left: 20vw;
+}
+
+.thr2 {
+    width: 30vw;
+    height: 18vh;
+    margin-top: 55vh;
+    margin-left: 10vw;
+}
+
+.thr3 {
+    width: 14vw;
+    height: 25vh;
+    margin-top: 90vh;
+    margin-left: 95vw;
+}
+
+.time {
+    width: 28vw;
+    height: 28vh;
+    margin-top: 10vh;
+    margin-left: 90vw;
+    color: white;
+    font-size: 3em;
+}
+
+.time2 {
+    width: 28vw;
+    height: 28vh;
+    margin-top: 50vh;
+    margin-left: 90vw;
+    color: white;
+    font-size: 3em;
+}
+
+.time3 {
+    width: 28vw;
+    height: 28vh;
+    margin-top: 10vh;
+    margin-left: 90vw;
+    color: white;
+    font-size: 3em;
+}

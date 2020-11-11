@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/parallax.js"></script>
+    <title>1</title>
+</head>
+<!-- relativeInput	true 或false	Specifies whether or not to use the coordinate system of the element passed to the parallax constructor. Mouse input only
+clipRelativeInput	true 或false	Specifies whether or not to clip the mouse input to the bounds of the element passed to the parallax constructor. Mouse input only
+calibrate-x	true 或false	指定是否根据初始时x轴的值来计算运动量
+calibrate-y	true 或false	指定是否根据初始时y轴的值来计算运动量
+invert-x	true 或false	设置为true则按反方向运动层
+invert-y	true 或false	设置为true则按反方向运动层
+limit-x	number 或false	x方向上总的运动量数值范围，设置为false则允许层自由运动
+limit-y	number 或false	y方向上总的运动量数值范围，设置为false则允许层自由运动
+scalar-x	number	输入的运动量和这个值相乘，增加或减少层运动的灵敏度
+scalar-y	number	输入的运动量和这个值相乘，增加或减少层运动的灵敏度
+friction-x	number 0-1	层运动的摩擦量，实际上是在层上添加一些easing效果
+friction-y	number 0-1	层运动的摩擦量，实际上是在层上添加一些easing效果
+origin-x	number	鼠标输入的x原点，默认值是0.5。0会移动原点到页面的左边，1会移动原点到页面的右边。Mouse input only
+origin-y	number	鼠标输入的x原点，默认值是0.5。0会移动原点到页面的上边，1会移动原点到页面的下边。Mouse input only -->
+
+<body>
+    <audio autoplay='autoplay' loop="-1" preload="auto">
+        <source src="bgm/3035870031.mp3">
+    </audio>
+
+    <div class="banner" id="scene" data-scalar-x="10" data-scalar-y="15" data-calibrate-x="false"
+        data-calibrate-y="false" data-friction-x=".2" data-friction-y=".1" data-origin-x="-1" data-origin-y="-1">
+
+        <img data-depth=".2" class="bg"></img>
+
+        <img data-depth=".2" class="fiv" src="img/7.png">
+        <img data-depth=".23" class="six" src="img/8.png">
+        <img data-depth=".4" class="sec" src="img/3.png">
+        <img data-depth=".4" class="thr" src="img/4.png">
+        <img data-depth=".8" class="fou" src="img/6.png">
+        <img data-depth="1" class="sev" src="img/logog.png">
+        <img data-depth="1.9" class="tree" src="img/tree.png">
+        <img data-depth=".7" class="stone" src="img/stone.png">
+
+        <i>
+            <div data-depth=".9" id="showtime" class="time"></div>
+        </i>
+    </div>
+</body>
+<script>
+    var scene = document.getElementById("scene");
+    var para = new Parallax(scene);
+
+    var div = document.getElementById("showtime");
+    var i = 246;
+    setInterval(function () {
+        i = i - 1
+        div.innerHTML = i;
+        if (i == 0) {
+            window.location.href = "sec.html"
+        }
+    }, 1000);
+</script>
+
+</html>

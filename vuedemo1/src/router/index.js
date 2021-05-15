@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import mh from '@/components/mh'
-
+import fly from '@/components/fly'
 Vue.use(Router)
 
 export default new Router({
@@ -15,6 +15,11 @@ export default new Router({
       path: '/mh',
       name: 'mh',
       component: mh
+    },
+    {
+      path: '/fly',
+      name: 'fly',
+      component: fly
     }
   ]
 })

@@ -7,6 +7,9 @@
       <li>
         <router-link to="/mh" class="test"><button>我的</button></router-link>
       </li>
+      <li>
+        <router-link to="/fly" class="test"><button>FLY</button></router-link>
+      </li>
       <br />
       <router-view />
     </ul>

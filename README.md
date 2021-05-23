@@ -7,7 +7,7 @@
 
  **个人存储库**  
 
-<a target="blank" href="https://gitee.com/lyskzjj/project/blob/master/LICENSE">
+<a target="_blank" href="https://gitee.com/lyskzjj/project/blob/master/LICENSE">
 	  <img src="https://img.shields.io/badge/license-GPL%203.0-g" ></img>
 	</a>
 <a target="_blank" href="https://space.bilibili.com/25916091">
@@ -85,3 +85,10 @@
  **白之月，既亚当之卵，也就是使徒的生命之源，埋藏于南极地底，人类依靠这个巨大空间建立了南极地下基地。2000年，人类利用存在于白之月之中的亚当进行科学试验，最终引发了第二次冲击。** 
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0523/212743_40c8eab5_8298577.jpeg "黑之月")
+
+**第五使徒 [2]  雷米尔 RAMIEL 雷天使是飞行的堡垒，加粒子炮贯穿了人类堡垒，坚固的防守告知人类力量的微弱。正八面体的第五使徒RAMIEL，本身具有自动排除一定距离内之外敌的能力，具相对位移空间常变及外型不稳定的特性、而能够自由变化成各种型式进行防御或攻击，进行攻击时会暴露出固定的核心.本体的下方还会伸出光子钻头，打算攻击地下都市。具有强大的AT力场，若以N2航空爆雷强行突破，所需分量足以将NERV连根拔起。刚出动的初号机受到险些致命的打击，后被葛城美里制订的“屋岛作战计划”，由EVA初号机在使徒发动攻击露出核心的一瞬间使用阳电子炮狙击，EVA零号机则是负责狙击失败时的防御。 初号机第一次发动的狙击失败，零号机虽然有AT力场和盾牌的保护，依然受到重创。初号机第二次攻击才一举毁灭使徒核心，并将使徒歼灭。**
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0523/213655_9835d6fd_8298577.jpeg "雷天使")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0523/213709_e533355d_8298577.jpeg "雷天使")
+
+###  _未完待续。。。_ 

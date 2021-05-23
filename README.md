@@ -7,7 +7,7 @@
 
  **个人存储库**  
 
-<a target="_blank" href="https://gitee.com/lyskzjj/project/blob/master/LICENSE">
+<a target="blank" href="https://gitee.com/lyskzjj/project/blob/master/LICENSE">
 	  <img src="https://img.shields.io/badge/license-GPL%203.0-g" ></img>
 	</a>
 <a target="_blank" href="https://space.bilibili.com/25916091">
@@ -22,6 +22,8 @@
 <a target="_blank" href="https://zh.moegirl.org.cn/%E6%96%B0%E4%B8%96%E7%BA%AA%E7%A6%8F%E9%9F%B3%E6%88%98%E5%A3%AB">
 	  <img src="https://img.shields.io/badge/EVA 萌娘百科%20-☆Kira~-pink" ></img>
 	</a>
+	
+
 
    **国际联合最高干部会所属——人类补完委员会（活动内容非公开）直属特务机关。 总司令：碇源堂。 拥有超越国家的权力，其成立目的之本质是人工进化研究所及其周边设施 守备兼任。主要任务是开发、研究EVA以及未确认物体使徒的调查，研究同时也将之捕获、歼灭。** 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0523/194110_ca214e30_8298577.jpeg "188224.jpg")
@@ -77,3 +79,9 @@
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0523/211256_5fb718e8_8298577.jpeg "Impact")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0523/211308_00c9bd39_8298577.jpeg "Impact")
+
+ **黒之月，既莉莉丝之卵，也就是人类的生命之源，埋藏于日本箱根，并且人类依靠这个巨大空间（就是89%被掩埋的地下空间，即Nerv本部所在地），建造了Geo Front ，并且建造了人类的新要塞——TOKYO-3。人类计划利用存在于黑之月之中的莉莉丝进行自己的补完计划。** 
+
+ **白之月，既亚当之卵，也就是使徒的生命之源，埋藏于南极地底，人类依靠这个巨大空间建立了南极地下基地。2000年，人类利用存在于白之月之中的亚当进行科学试验，最终引发了第二次冲击。** 
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0523/212743_40c8eab5_8298577.jpeg "黑之月")

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	 
+		#center{
+			position: relative;
+			top: 170px;
+			margin: auto;
+			background-color: #FFF8DC;
+			width:400px;
+			height:270px;
+			border-radius: 20px;
+			box-shadow: 5px 5px 5px black;
+		}
+		#login{
+			text-align: center;
+			font-weight: bold;
+			font-size: 30px;
+			padding-top: 13px;
+			font-family:Arial,Helvetica,sans-serif;
+			color: #FF6347;
+		}
+
+		#username{
+		/*	text-align: center;*/
+			background-color: #FFF8DC;
+			margin-bottom: 20px;
+			width: 250px;
+			height: 30px;
+			border-left-width:0px;
+			border-top-width:0px;
+			border-right-width:0px;
+			border-bottom-color:black;
+			font-size: 25px;
+		}
+		input:-internal-autofill-previewed,
+		input:-internal-autofill-selected {
+   			 -webkit-text-fill-color: black !important;
+   			 transition: background-color 5000s ease-in-out 0s !important;
+    
+			}
+	/*	input:-internal-autofill-selected {
+    background-color: #FFF8DC !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}*/
+		#password{
+			background-color: #FFF8DC;
+			border-left-width:0px;
+			border-top-width:0px;
+			border-right-width:0px;
+			border-bottom-color:black;
+			width: 250px;
+			height: 30px;
+			font-size: 25px;
+		}
+		#username:focus{
+			outline: none;
+			border-bottom-color:#7CCD7C;
+		}
+
+		#password:focus{
+			outline: none;
+			border-bottom-color:#7CCD7C;
+		}
+
+		#userinput{
+		text-align: center;
+		
+		}
+
+		#loginbu{
+			text-align: center;
+		}
+
+		.formbu{
+			margin-top:30px;
+			width:80px;
+			height:35px;
+			background-color: #4ea4eb;
+			border-radius:10px;
+			outline: none;
+			color: white;
+			box-shadow:2px 2px 2px black;
+			border:2px solid white;
+			/*text-shadow: 2px 2px 2px black;*/
+		}
+
+		.formbu:hover{
+			background-color: #64b9ff;
+			border:2px solid white;
+		}
+
+		.formbu:active{
+			box-shadow:2px 2px 2px black inset;
+		}
+		
+		#bg{
+			position:absolute;
+			top:0;
+			left:0;
+			height:100%;
+			width:100%;
+			background-image:url("images/bg.jpg");
+			background-position: center 0;
+			background-repeat: no-repeat;
+			background-attachment:fixed;
+			background-size: cover;
+			-webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */
+			-o-background-size: cover;/* 兼容Opera */
+			zoom: 1;
+		}
+	</style>
+</head>
+<body >
+<div id="bg"></div>
+
+<div id='center'>
+	<p id="login">登录</p>
+	
+	<div id="userinput">
+<input type="text" name="" id="username" placeholder="username" autocomplete=false>
+<br>
+<input type="password" name="" id="password" placeholder="password">
+</div>
+
+<div id="loginbu">
+
+<button class="formbu">LOGIN</button>
+
+
+</div>
+
+</div>
+
+</body >
+
+
+</html>

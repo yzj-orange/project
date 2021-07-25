@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+
+<title>即刻登录</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+</head>
+<body>
+<div style="text-align:center;clear:both">
+
+          <h1>欢迎访问DRAWING COMMUNICATION</h1>
+
+
+</div>
+
+
+
+
+
+<div class="cotn_principal">
+  <div class="cont_centrar">
+    <div class="cont_login">
+      <div class="cont_info_log_sign_up">
+        <div class="col_md_login">
+          <div class="cont_ba_opcitiy">
+            <h2>LOGIN</h2>
+            <p>现在就登陆</p>
+            <button class="btn_login" onClick="cambiar_login()">进入</button>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col_md_sign_up">
+          <div class="cont_ba_opcitiy">
+            <h2>SIGN UP</h2>
+            <p>还没注册？</p>
+            <button class="btn_sign_up" onClick="cambiar_sign_up()">注册</button>
+          </div>
+        </div>
+      </div>
+      <div class="cont_back_info">
+        <div class="cont_img_back_grey"> <img src="po.jpg" alt="" /> </div>
+      </div>
+      <div class="cont_forms" >
+        <div class="cont_img_back_"> <img src="po.jpg" alt="" /> </div>
+
+
+
+        <div class="cont_form_login"> <a href="#" onClick="ocultar_login_sign_up()" ><i class="material-icons red">&#xE5C4;</i></a>
+
+         <h2>开始旅途</h2>
+          <input id="username1" type="email" placeholder="Email/用户名" />
+          <input id="password1"  type="password" placeholder="Password" />
+         
+           <button  id="login" class="btn_login" >登录</button>
+        </div>
+
+
+
+
+        <div class="cont_form_sign_up"> 
+
+          <a href="#" onClick="ocultar_login_sign_up()">
+            <i class="material-icons red">&#xE5C4;
+          </i>
+          </a>
+                <h2>开始之前...</h2>
+       
+          <input  id="username"         type="email" placeholder="Email/用户名" />
+          <input  id="password"    
+          onkeyup="value=value.replace(/[\W]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[\W]/g,''))"      type="password" placeholder="Password" />
+         
+          <button    id="regist"     class="btn_sign_up" >注册一个账户</button>
+ 
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/index.js"></script>
+<script src="js/idex.js">
+
+
+
+</script>
+
+</body>
+</html>
+

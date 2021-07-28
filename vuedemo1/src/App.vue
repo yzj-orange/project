@@ -10,6 +10,9 @@
       <li>
         <router-link to="/fly" class="test"><button>FLY</button></router-link>
       </li>
+      <li>
+        <router-link to="/living" class="test"><button>living</button></router-link>
+      </li>
       <br />
       <router-view />
     </ul>

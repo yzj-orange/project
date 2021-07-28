@@ -1,5 +1,7 @@
 <template>
-    <div class="container" style="width:1000px;margin-top:30px">
+<div style="white-space:nowrap">
+    <br>
+    <div class="container" style="width:1000px;margin-top:18px;float:left">
         <div class="player">
         <video-player class="video-player vjs-custom-skin"
             ref="videoPlayer"
@@ -8,8 +10,25 @@
         ></video-player>
         </div>
     </div>
+    <ul class="uls" >
+        <li @click="changeTv(6)">cctv6</li>
+        <li @click="changeTv(1)">cctv1</li>
+    </ul>
+</div>
 </template>
-
+<style scoped>
+    .uls{
+        width:80px;
+        color:yellow;
+        margin-top:18px;
+        margin-left:18px;
+        position: absolute;
+        margin-left: 1050px;
+        font-size: 1.5em;
+        cursor: pointer;
+        list-style-type: disc;
+    }
+</style>
 <script>
 import Vue from 'vue'
 // import VideoPlayer from 'vue-video-player'
@@ -26,7 +45,7 @@ export default {
         return {
             playerOptions: {
                 playbackRates: [0.7, 1.0, 1.5, 2.0], //播放速度
-                autoplay: false, //如果true,浏览器准备好时开始回放。
+                autoplay: true, //如果true,浏览器准备好时开始回放。
                 muted: false, // 默认情况下将会消除任何音频。
                 loop: false, // 导致视频一结束就重新开始。
                 preload: 'auto', // 建议浏览器在<video>加载元素后是否应该开始下载视频数据。auto浏览器选择最佳行为,立即开始加载视频（如果浏览器支持）
@@ -54,6 +73,14 @@ export default {
     },
     methods: {
         //事件
+        changeTv(val){
+            if(val==1){
+                this.playerOptions.sources[0].src='http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8'
+            }
+            if(val==6){
+                this.playerOptions.sources[0].src='http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8'
+            }
+        }
     }
 }
 </script>

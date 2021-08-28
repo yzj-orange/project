@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-@CrossOrigin
+@CrossOrigin(origins = "http://192.168.199.233:8066/")
 @RestController
 @RequestMapping("/papa")
 public class PAcontroller {
